@@ -1,0 +1,33 @@
+{
+  "name": "lambda-container-template",
+  "version": "0.1.0",
+  "description": "\"Template for AWS Lambda container images\"",
+  "author": "Andre Silva <andreswebs@pm.me>",
+  "license": "Unlicense",
+  "main": "dist/app.js",
+  "private": true,
+  "engines": {
+    "node": ">=14.15.0"
+  },
+  "scripts": {
+    "local:ts": "npx ts-node src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "watch": "tsc -w",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.83",
+    "@types/node": "^16.9.1",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.3"
+  }
+}
