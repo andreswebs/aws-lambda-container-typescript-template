@@ -1,1 +1,1 @@
-# lambda-container-template
+# aws-lambda-container-typescript-template
